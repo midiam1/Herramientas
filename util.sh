@@ -26,7 +26,7 @@ fi
 
 # QT Creator
 
-if ! command -v kdevelop &> /dev/null
+if ! command -v qtcreator &> /dev/null
 then
 	echo " QT Creator no está instalado, procedo a instalarlo "
 	sudo apt -y install snap

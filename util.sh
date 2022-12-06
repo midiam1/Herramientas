@@ -29,14 +29,21 @@ fi
 if ! command -v qtcreator &> /dev/null
 then
 	echo " QT Creator no está instalado, procedo a instalarlo "
-	sudo apt -y install snap
+	sudo apt -y install snapd
 	sudo snap -y install qtcreator-ros --classic
 else
 	echo " QT Creator está instalado "
-exit
+
 fi
 
-
-
-
 # PyCharm
+
+if ! command -v pycharm-community &> /dev/null
+then
+	echo " PyCharm no está instalado, procedo a instalarlo "
+	sudo apt -y install snapd
+	sudo snap -y install pycharm-community --classic
+else
+	echo " PyCharm está instalado "
+exit
+fi
